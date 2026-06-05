@@ -1,0 +1,39 @@
+# 作品集数据 —— 记者外链 clips
+#
+# 每条作品的字段说明(接口契约):
+#   title    : 必填。报道标题
+#   outlet   : 必填。发表媒体名(如 财新、南方周末)
+#   date     : 必填。发表日期 YYYY-MM-DD,用于同一领域内倒序排列
+#   url      : 必填。原文外链
+#   beat     : 必填。报道领域,相同 beat 的作品会归到同一分区
+#   dek      : 可选。一句话导语 / 内容简介
+#   image    : 可选。缩略图路径(如 /assets/img/works/xxx.jpg);缺省则渲染纯文字卡片
+#   featured : 可选。设为 true 标记代表作(显示「代表作」标签)
+#
+# 添加新作品只需在此追加条目,无需改动模板。
+# 下面 3 条为占位样例,替换成你的真实作品即可。
+
+- title: "示例调查报道:某行业的隐秘链条"
+  outlet: "示例媒体 A"
+  date: 2024-11-20
+  url: "https://example.com/story-1"
+  beat: "调查报道"
+  dek: "一句话导语:这里写报道的核心发现或最吸引人的角度。"
+  featured: true
+  # image: /assets/img/works/story-1.jpg
+
+- title: "示例人物特稿:一个普通人的十年"
+  outlet: "示例媒体 B"
+  date: 2024-06-08
+  url: "https://example.com/story-2"
+  beat: "人物特稿"
+  dek: "一句话导语:用一句话概括这篇人物报道的张力所在。"
+  # image: /assets/img/works/story-2.jpg
+
+- title: "示例文化评论:关于某现象的观察"
+  outlet: "示例媒体 A"
+  date: 2023-12-15
+  url: "https://example.com/story-3"
+  beat: "文化评论"
+  dek: "一句话导语:概括这篇评论的观点立场。"
+  # image: /assets/img/works/story-3.jpg

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<div class="welcome-page text-center px-1">
+  <section class="welcome-hero">
+    <h1 class="welcome-name">{{ site.title }}</h1>
+    <p class="welcome-tagline">{{ site.tagline }}</p>
+
+    {% if page.intro %}
+      <p class="welcome-intro">{{ page.intro }}</p>
+    {% endif %}
+
+    <div class="welcome-actions">
+      <a href="{{ '/works/' | relative_url }}" class="btn btn-primary welcome-btn">
+        <i class="fas fa-newspaper"></i> 查看作品
+      </a>
+      <a href="{{ '/about/' | relative_url }}" class="btn btn-outline welcome-btn">
+        <i class="fas fa-user"></i> 关于我
+      </a>
+      {% if site.social.email %}
+        <a href="javascript:void(location.href='mailto:'+['{{ site.social.email | split: '@' | first }}','{{ site.social.email | split: '@' | last }}'].join('@'))"
+           class="btn btn-outline welcome-btn">
+          <i class="fas fa-envelope"></i> 联系我
+        </a>
+      {% endif %}
+    </div>
+  </section>
+
+  {% capture welcome_body %}{{ content }}{% endcapture %}
+  {% assign welcome_body = welcome_body | strip %}
+  {% if welcome_body != '' %}
+    <div class="welcome-body content text-start">{{ content }}</div>
+  {% endif %}
+</div>

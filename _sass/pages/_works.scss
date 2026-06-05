@@ -1,0 +1,135 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/breakpoints' as bp;
+
+/* ==== 作品集页面 ==== */
+
+.works-page {
+  margin-bottom: 2rem;
+
+  .works-intro {
+    color: var(--text-muted-color);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.works-section {
+  margin-top: 1.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .works-beat {
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--btn-border-color);
+  }
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  @include bp.md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp.xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 0;
+  border-radius: v.$radius-lg;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+  }
+
+  .work-thumb {
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.25rem;
+  }
+
+  .work-badge {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    border-radius: v.$radius-sm;
+    padding: 0.05rem 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0 0 0.5rem;
+
+    a {
+      color: var(--heading-color);
+
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+
+  .work-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted-color);
+    margin-bottom: 0.6rem;
+
+    .work-outlet {
+      font-weight: 600;
+
+      &::after {
+        content: '·';
+        margin: 0 0.4rem;
+      }
+    }
+  }
+
+  .work-dek {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .work-readmore {
+    align-self: flex-start;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--link-color);
+  }
+}

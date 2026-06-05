@@ -1,8 +1,40 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: 关于
+permalink: /about/
+icon: fas fa-user
+order: 2
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> 以下为占位内容,请替换成你的真实信息(标注 TODO 处尤其需要修改)。
 {: .prompt-tip }
+
+## 简介
+
+我是 **你的名字**,一名记者,关注 XX、YY 等领域。<!-- TODO: 替换成你的真实简介 -->
+擅长 调查报道 / 人物特稿 / 数据新闻,作品见诸 示例媒体 A、示例媒体 B 等。
+
+## 报道领域
+
+- **调查报道** —— 一句话说明你在这个领域做过什么
+- **人物特稿** —— 一句话说明
+- **文化评论** —— 一句话说明
+
+## 工作经历
+
+| 时间 | 机构 | 职位 |
+|------|------|------|
+| 2022 - 至今 | 示例媒体 A | 记者 |
+| 2019 - 2022 | 示例媒体 B | 实习 / 记者 |
+
+<!-- TODO: 替换成你的真实经历 -->
+
+## 简历
+
+[下载简历 (PDF)](/assets/resume.pdf){: .btn .btn-primary }
+<!-- TODO: 把简历放到 assets/resume.pdf,或修改上面的链接 -->
+
+## 联系
+
+- 邮箱:在 `_config.yml` 的 `social.email` 中设置后,侧边栏会显示邮箱图标
+- 社交账号见左侧边栏底部图标

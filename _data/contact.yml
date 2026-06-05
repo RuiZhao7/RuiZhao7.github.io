@@ -10,6 +10,10 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: linkedin
+  icon: "fab fa-linkedin" # 求职场景建议保留;在下方填入你的 LinkedIn 主页
+  url: "" # TODO: 填入你的 LinkedIn 主页链接,如 https://www.linkedin.com/in/yourname
+
 - type: rss
   icon: "fas fa-rss"
   noblank: true

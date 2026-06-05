@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: zh-CN
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Shanghai
@@ -14,36 +14,35 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: 你的名字 # TODO: 改成你的真实姓名(显示在侧边栏顶部)
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 记者 · 关注 XX 领域 # TODO: 一句话定位,显示为副标题
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  记者个人主页 —— 作品集与联系方式。# TODO: 改成你的简介,用于 SEO 和 RSS
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://RuiZhao7.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: RuiZhao7 # TODO: 确认/改成你的 GitHub 用户名
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: twitter_username # TODO: 改成你的 X/Twitter 用户名(没有可留空)
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: 你的名字 # TODO: 真实姓名(文章默认作者 + 页脚版权)
+  email: example@domain.com # TODO: 改成你的邮箱
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://github.com/RuiZhao7 # TODO: 改成你的主要主页链接(版权归属用)
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # - https://twitter.com/username
+    # - https://www.linkedin.com/in/username  # TODO: 求职建议补上 LinkedIn
 
 # Site Verification Settings
 webmaster_verifications:
@@ -96,10 +95,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+cdn: "" # 个人站使用本地资源(/assets/img/...),清空主题 demo 图床前缀
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/img/avatar.jpg" # TODO: 放一张你的头像到 assets/img/avatar.jpg(建议方形,≥400x400)
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

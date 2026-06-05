@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<div class="works-page px-1">
+  {% if page.title %}
+    <h1 class="dynamic-title">{{ page.title }}</h1>
+  {% endif %}
+
+  {% capture page_intro %}{{ content }}{% endcapture %}
+  {% assign page_intro = page_intro | strip %}
+  {% if page_intro != '' %}
+    <div class="works-intro content">{{ content }}</div>
+  {% endif %}
+
+  {% assign works = site.data.works %}
+
+  {% if works == nil or works == empty %}
+    <p class="text-muted">{{ '作品集内容即将上线。' }}</p>
+  {% else %}
+    <!-- 按首次出现顺序收集报道领域(beat) -->
+    {% assign beats = '' | split: '' %}
+    {% for w in works %}
+      {% unless beats contains w.beat %}
+        {% assign beats = beats | push: w.beat %}
+      {% endunless %}
+    {% endfor %}
+
+    {% for beat in beats %}
+      {% assign group = works | where: 'beat', beat | sort: 'date' | reverse %}
+      <section class="works-section">
+        <h2 class="works-beat">{{ beat }}</h2>
+        <div class="works-grid">
+          {% for w in group %}
+            <article class="work-card card">
+              {% if w.image %}
+                <a href="{{ w.url }}" target="_blank" rel="noopener noreferrer"
+                   class="work-thumb" aria-label="{{ w.title | xml_escape }}">
+                  <img src="{{ w.image | relative_url }}" alt="{{ w.title | xml_escape }}">
+                </a>
+              {% endif %}
+              <div class="card-body">
+                {% if w.featured %}
+                  <span class="work-badge">代表作</span>
+                {% endif %}
+                <h3 class="work-title">
+                  <a href="{{ w.url }}" target="_blank" rel="noopener noreferrer">{{ w.title }}</a>
+                </h3>
+                <div class="work-meta">
+                  {% if w.outlet %}<span class="work-outlet">{{ w.outlet }}</span>{% endif %}
+                  {% if w.date %}<span class="work-date">{{ w.date | date: '%Y-%m-%d' }}</span>{% endif %}
+                </div>
+                {% if w.dek %}<p class="work-dek">{{ w.dek }}</p>{% endif %}
+                <a href="{{ w.url }}" target="_blank" rel="noopener noreferrer"
+                   class="work-readmore">阅读原文 &rarr;</a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  {% endif %}
+</div>
