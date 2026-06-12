@@ -37,6 +37,18 @@
         </li>
         <!-- .nav-item -->
       {% endfor %}
+
+      <!-- contact: 直接发邮件(反爬 mailto) -->
+      {% if site.social.email %}
+        {%- assign _email = site.social.email | split: '@' -%}
+        <li class="nav-item">
+          <a href="javascript:void(location.href='mailto:'+['{{ _email[0] }}','{{ _email[1] }}'].join('@'))" class="nav-link">
+            <i class="fa-fw fas fa-envelope"></i>
+            <span>联系</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      {% endif %}
     </ul>
   </nav>
 
