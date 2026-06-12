@@ -97,7 +97,7 @@ theme_mode: # [light | dark]
 cdn: "" # 个人站使用本地资源(/assets/img/...),清空主题 demo 图床前缀
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "" # TODO: 放一张方形头像(≥400x400)到 assets/img/avatar.jpg 后,改为 "/assets/img/avatar.jpg";留空则侧边栏不显示头像(避免破图)
+avatar: "/assets/img/avatar.jpg" # 侧边栏头像(512x512 方图)
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
