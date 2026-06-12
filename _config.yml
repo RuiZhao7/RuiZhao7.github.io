@@ -14,35 +14,34 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 你的名字 # TODO: 改成你的真实姓名(显示在侧边栏顶部)
+title: 赵芮 # 显示在侧边栏顶部
 
-tagline: 记者 · 关注 XX 领域 # TODO: 一句话定位,显示为副标题
+tagline: AI 科技作者 · 记者 # 一句话定位,显示为副标题
 
 description: >- # used by seo meta and the atom feed
-  记者个人主页 —— 作品集与联系方式。# TODO: 改成你的简介,用于 SEO 和 RSS
+  赵芮的个人主页 —— 专注 AI 方向报道的科技作者 / 记者,作品集与联系方式。
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://RuiZhao7.github.io"
 
 github:
-  username: RuiZhao7 # TODO: 确认/改成你的 GitHub 用户名
+  username: RuiZhao7 # GitHub 用户名
 
 twitter:
-  username: twitter_username # TODO: 改成你的 X/Twitter 用户名(没有可留空)
+  username: # 无 X/Twitter 账号,留空
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 你的名字 # TODO: 真实姓名(文章默认作者 + 页脚版权)
-  email: example@domain.com # TODO: 改成你的邮箱
+  name: 赵芮 # 文章默认作者 + 页脚版权
+  email: 1434996896@qq.com # 联系邮箱
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/RuiZhao7 # TODO: 改成你的主要主页链接(版权归属用)
+    - https://github.com/RuiZhao7 # 主要主页链接(版权归属用)
     # Uncomment below to add more social links
-    # - https://twitter.com/username
-    # - https://www.linkedin.com/in/username  # TODO: 求职建议补上 LinkedIn
+    # - https://www.linkedin.com/in/username  # TODO: 如有 LinkedIn 可补上
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +97,7 @@ theme_mode: # [light | dark]
 cdn: "" # 个人站使用本地资源(/assets/img/...),清空主题 demo 图床前缀
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.jpg" # TODO: 放一张你的头像到 assets/img/avatar.jpg(建议方形,≥400x400)
+avatar: "" # TODO: 放一张方形头像(≥400x400)到 assets/img/avatar.jpg 后,改为 "/assets/img/avatar.jpg";留空则侧边栏不显示头像(避免破图)
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

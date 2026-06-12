@@ -1,44 +1,23 @@
 #  The contact options.
-
-- type: github
-  icon: "fab fa-github"
-
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+#  侧边栏底部图标。当前仅启用邮箱 + GitHub(站点宿主)。
+#  微信无 URL,不适合做图标链接,已放在「关于」页文字展示。
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: linkedin
-  icon: "fab fa-linkedin" # 求职场景建议保留;在下方填入你的 LinkedIn 主页
-  url: "" # TODO: 填入你的 LinkedIn 主页链接,如 https://www.linkedin.com/in/yourname
+- type: github
+  icon: "fab fa-github"
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+# 如需补充,取消注释并填入对应主页链接:
 #
 # - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
+#   icon: 'fab fa-linkedin'
+#   url: ''                   # TODO: 如有 LinkedIn 主页可填入,如 https://www.linkedin.com/in/yourname
 #
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+# - type: twitter
+#   icon: 'fa-brands fa-x-twitter'
 #
-# - type: bluesky
-#   icon: 'fa-brands fa-bluesky'
-#   url: ''                   # Fill with your Bluesky profile link
-#
-# - type: reddit
-#   icon: 'fa-brands fa-reddit'
-#   url: ''                   # Fill with your Reddit profile link
-#
-# - type: threads
-#   icon: 'fa-brands fa-threads'
-#   url: ''                   # Fill with your Threads profile link
+# - type: rss
+#   icon: 'fas fa-rss'
+#   noblank: true
