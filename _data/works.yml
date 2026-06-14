@@ -10,61 +10,8 @@
 #   image    : 可选。缩略图路径(如 /assets/img/works/xxx.jpg);缺省则渲染纯文字卡片
 #   featured : 可选。设为 true 标记代表作(显示「代表作」标签)
 #
-# 添加新作品只需在此追加条目,无需改动模板。
-#
+# 分区顺序按 beat 在本文件中首次出现的先后排列。
 # 注:date 为近似值(CV 未给逐篇日期),仅用于同一 beat 内排序,可按真实发表时间校正。
-
-# ============ AI 行业观察 / 热点突破 ============
-
-- title: "全世界消耗 Token 最多的人"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-10-20
-  url: "https://mp.weixin.qq.com/s/WN1Ucstk9wEiACNfNcVgEQ"
-  beat: "AI 行业观察"
-  dek: "Claude 代码泄露事件中捕捉到最具代表性的人物,发表后吸引本人前来评论,被 36氪、每日人物、正和岛等 16 家媒体转发,平台阅读量 25w+、全网 50w+。"
-  featured: true
-
-- title: "一个实习生亲历的 Manus 外迁与裁员"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-09-15
-  url: "https://mp.weixin.qq.com/s/PBlp7p2VyMiizEfpwDkbZA"
-  beat: "AI 行业观察"
-  dek: "Manus 撤裁搬离事件中,在全员签署保密协议的情况下突破一位核心岗位实习生,成为同期唯一突破到内部人员的自述报道,被 36氪、定焦one、创业邦等 7 家媒体转发。"
-
-- title: "第一批买 AI 眼镜的人,已退货"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-08-12
-  url: "https://mp.weixin.qq.com/s/rsSWsZhQ1AEuf0o2veANGw"
-  beat: "AI 行业观察"
-  dek: "AI 眼镜热潮期的批判性思考,从消费端反映行业真实现状,率先输出观察报道,被商界、第一财经、镜相等 11 家商业科技媒体转发。"
-
-- title: "宇树机器人,在婚礼迎宾,养老院热舞,日入 8000"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-07-22
-  url: "https://mp.weixin.qq.com/s/0HV9GLVq1cJ5ezuhvzsfzQ"
-  beat: "AI 行业观察"
-  dek: "洞察消费级机器人商业化落地的火热赛道,突破核心销售人员获取 0–1 商业模式与行业隐性问题,被 36氪、虎嗅、果壳等 10 家媒体转发,全网阅读量 15w+。"
-
-- title: "AI 教父杨立昆,最牛马的打工人"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-06-30
-  url: "https://mp.weixin.qq.com/s/9gSdeqSehlCVMgtdt3isdQ"
-  beat: "AI 行业观察"
-  dek: "扎克伯格重金挖人期间,聚焦强故事性人物杨立昆,从个人职业故事辐射 Meta 发展战略及行业变化。"
-
-- title: "被裁的亚马逊普通员工,怒怼 AI"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-06-05
-  url: "https://mp.weixin.qq.com/s/ZTaGkPgzDyitMSxnZdAjtg"
-  beat: "AI 行业观察"
-  dek: "亚马逊大裁员事件后突破 3 位内部员工还原原委,挖掘 AI 与职场替代议题的新知,被虎嗅等媒体转发。"
-
-- title: "末日雄文《2028 全球智能危机》的作者,已赚翻"
-  outlet: "真实故事计划 · AI 故事计划"
-  date: 2025-05-18
-  url: "https://mp.weixin.qq.com/s/Koc9f2ZbIr8QXmqu7YChcw"
-  beat: "AI 行业观察"
-  dek: "「2028 预言」席卷网络时,迅速查找作者过往经历提炼人物特性,输出区别于同期报道的信息增量与洞察。"
 
 # ============ AI 与社会群像 ============
 
@@ -113,13 +60,58 @@
   beat: "AI 与社会群像"
   dek: "突破深度体验型用户,通过典型人群故事体现 AI 陪伴赛道的应用痛点与变现困境。"
 
-# ============ 深度报道 · 人物特稿(早期作品) ============
+# ============ AI 行业观察 / 热点突破 ============
+
+- title: "全世界消耗 Token 最多的人"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-10-20
+  url: "https://mp.weixin.qq.com/s/WN1Ucstk9wEiACNfNcVgEQ"
+  beat: "AI 行业观察"
+  dek: "Claude 代码泄露事件中捕捉到最具代表性的人物,发表后吸引本人前来评论,被 36氪、每日人物、正和岛等 16 家媒体转发,平台阅读量 25w+、全网 50w+。"
+  featured: true
+
+- title: "一个实习生亲历的 Manus 外迁与裁员"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-09-15
+  url: "https://mp.weixin.qq.com/s/PBlp7p2VyMiizEfpwDkbZA"
+  beat: "AI 行业观察"
+  dek: "Manus 撤裁搬离事件中,在全员签署保密协议的情况下突破一位核心岗位实习生,成为同期唯一突破到内部人员的自述报道,被 36氪、定焦one、创业邦等 7 家媒体转发。"
+
+- title: "第一批买 AI 眼镜的人,已退货"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-08-12
+  url: "https://mp.weixin.qq.com/s/rsSWsZhQ1AEuf0o2veANGw"
+  beat: "AI 行业观察"
+  dek: "AI 眼镜热潮期的批判性思考,从消费端反映行业真实现状,率先输出观察报道,被商界、第一财经、镜相等 11 家商业科技媒体转发。"
+
+- title: "宇树机器人,在婚礼迎宾,养老院热舞,日入 8000"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-07-22
+  url: "https://mp.weixin.qq.com/s/0HV9GLVq1cJ5ezuhvzsfzQ"
+  beat: "AI 行业观察"
+  dek: "洞察消费级机器人商业化落地的火热赛道,突破核心销售人员获取 0–1 商业模式与行业隐性问题,被 36氪、虎嗅、果壳等 10 家媒体转发,全网阅读量 15w+。"
+
+- title: "AI 教父杨立昆,最牛马的打工人"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-06-30
+  url: "https://mp.weixin.qq.com/s/9gSdeqSehlCVMgtdt3isdQ"
+  beat: "AI 行业观察"
+  dek: "扎克伯格重金挖人期间,聚焦强故事性人物杨立昆,从个人职业故事辐射 Meta 发展战略及行业变化。"
+
+- title: "末日雄文《2028 全球智能危机》的作者,已赚翻"
+  outlet: "真实故事计划 · AI 故事计划"
+  date: 2025-05-18
+  url: "https://mp.weixin.qq.com/s/Koc9f2ZbIr8QXmqu7YChcw"
+  beat: "AI 行业观察"
+  dek: "「2028 预言」席卷网络时,迅速查找作者过往经历提炼人物特性,输出区别于同期报道的信息增量与洞察。"
+
+# ============ 过往报道与人物专访(早期作品) ============
 
 - title: "浙江大学吴飞:新闻传播的使命是让每个人都有尊严地活"
   outlet: "南都周刊 · 深度训练营"
   date: 2024-04-20
   url: "https://mp.weixin.qq.com/s/YTnhKEAho5gXW-Tb0Kr2nw"
-  beat: "深度报道 · 人物特稿"
+  beat: "过往报道与人物专访"
   dek: "三次沟通突破浙江大学教授吴飞的受访意愿,争取到 3 小时访谈,被深度训练营评为「年度最佳学者访谈」,虎嗅等平台转载,记者手记被腾讯传媒派转载,浏览量 3w+。"
   featured: true
 
@@ -127,26 +119,26 @@
   outlet: "南都周刊 · 深度训练营"
   date: 2024-03-25
   url: "https://mp.weixin.qq.com/s/LgN-CP1f3In4HjbrPKM9nw"
-  beat: "深度报道 · 人物特稿"
+  beat: "过往报道与人物专访"
   dek: "通过公开报道中呈现的经历提炼人物特性、设计访谈提纲,以其鲜明风格与独特视角展现财经报道思路。"
 
 - title: "宠托师:火爆背后有隐忧"
   outlet: "新华社 · 瞭望东方周刊"
   date: 2024-02-15
   url: "https://mp.weixin.qq.com/s/bLaXUIXDlDiyEBOu1Sl1Fw"
-  beat: "深度报道 · 人物特稿"
+  beat: "过往报道与人物专访"
   dek: "由春节上门喂宠的火爆现象切入,调研行业发展模式,找到 3 位典型人物采写,一周浏览量 47.9w。"
 
 - title: "如果你的孩子是左撇子,你会纠正 ta 吗"
   outlet: "南都周刊 · 深度训练营"
   date: 2023-12-10
   url: "https://mp.weixin.qq.com/s/dYgIwR6CWcyb9G6QQ1xmbg"
-  beat: "深度报道 · 人物特稿"
+  beat: "过往报道与人物专访"
   dek: "从日常生活中观察到左撇子的生活细节,寻找四位受访人完成群像报道,被虎嗅转载。"
 
 - title: "绿色蔷薇:女性组织如何为女工发声"
   outlet: "解困式报道中国案例库"
   date: 2023-10-18
   url: "https://mp.weixin.qq.com/s/ZXfcqGOXPvnMs7Z-NDUz7Q"
-  beat: "深度报道 · 人物特稿"
+  beat: "过往报道与人物专访"
   dek: "关注女性社工等边缘群体组织活动,策划平台内首个女性解困报道,输出公号文章及播客,浏览量 2w+。"
